@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers config: serves the static site in ./public.
+  // The name must stay "red-hat-50c0" so deploys land on the Worker that serves coderisecoaching.com.
+  "name": "red-hat-50c0",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public"
+  }
+}

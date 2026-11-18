@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coderise Coaching | CV, LinkedIn and interview coaching for early-career tech</title>
+<meta name="description" content="Done-for-you CV and LinkedIn, plus interview and offer coaching, from a Tech Recruiter and former Head of HR. Get found, get interviews, get hired." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%230B334E%27/%3E%3Cg%20transform%3D%27translate%287.7%207.7%29%20scale%280.76%29%27%3E%3Cpath%20d%3D%27M20%2017%20L7%2032%20L20%2047%27%20fill%3D%27none%27%20stroke%3D%27%23FAF8F8%27%20stroke-width%3D%275.5%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%3Cpath%20d%3D%27M44%2017%20L57%2032%20L44%2047%27%20fill%3D%27none%27%20stroke%3D%27%23FAF8F8%27%20stroke-width%3D%275.5%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2727%27%20r%3D%277.2%27%20fill%3D%27%239B8FF0%27/%3E%3Cpath%20d%3D%27M21%2045%20C21%2037%2026%2033.5%2032%2033.5%20C38%2033.5%2043%2037%2043%2045%20Z%27%20fill%3D%27%239B8FF0%27/%3E%3C/g%3E%3C/svg%3E" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon.png" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0B334E; --violet:#5A4FCF; --violet-d:#473BB0; --violet-l:#9B8FF0;
+    --tint:#ECEAFB; --off:#FAF8F8; --ink:#1f2733; --muted:#5b6573; --line:#e7e4f3;
+    --maxw:1080px; --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:80px}
+  body{margin:0; font-family:'Poppins',system-ui,sans-serif; color:var(--ink); background:var(--off); line-height:1.65; -webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-weight:600; line-height:1.15; color:var(--navy); margin:0 0 .5em}
+  h1{font-size:clamp(2rem,5vw,3.1rem)}
+  h2{font-size:clamp(1.5rem,3.5vw,2.1rem)}
+  h3{font-size:1.15rem}
+  p{margin:0 0 1rem}
+  a{color:var(--violet); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  .section{padding:72px 0}
+  .muted{color:var(--muted)}
+  .center{text-align:center}
+  /* buttons */
+  .btn{display:inline-block; font-weight:500; font-size:1rem; padding:13px 24px; border-radius:10px; cursor:pointer; border:2px solid transparent; transition:.15s; text-decoration:none}
+  .btn-primary{background:var(--violet); color:#fff}
+  .btn-primary:hover{background:var(--violet-d); text-decoration:none}
+  .btn-ghost{background:transparent; color:var(--navy); border-color:var(--navy)}
+  .btn-ghost:hover{background:var(--navy); color:#fff; text-decoration:none}
+  .btn-light{background:#fff; color:var(--navy); border-color:#fff}
+  .btn-light:hover{background:var(--tint); text-decoration:none}
+  /* header */
+  header{position:sticky; top:0; z-index:50; background:rgba(250,248,248,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:12px 22px; max-width:var(--maxw); margin:0 auto}
+  .nav img{height:38px; display:block}
+  .nav-links{display:flex; align-items:center; gap:26px}
+  .nav-links a{color:var(--navy); font-size:.95rem; font-weight:500}
+  .nav-toggle{display:none; background:none; border:0; cursor:pointer; padding:6px}
+  .nav-toggle span{display:block; width:24px; height:2px; background:var(--navy); margin:5px 0; transition:.2s}
+  /* hero */
+  .hero{padding:84px 0 40px; text-align:center}
+  .hero p.sub{font-size:1.2rem; max-width:640px; margin:0 auto 1.8rem; color:var(--muted)}
+  .hero .ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
+  .tagline{margin-top:46px; background:var(--navy); color:#fff; border-radius:var(--r)}
+  .tagline .wrap{padding:18px 22px; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap; font-weight:600; font-size:1.1rem}
+  .tagline .dot{color:var(--violet-l)}
+  /* generic */
+  .lead{font-size:1.15rem}
+  .grid{display:grid; gap:22px}
+  .alt{background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  /* packages */
+  .cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); align-items:stretch}
+  .card{background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:28px; display:flex; flex-direction:column}
+  .card.feature{border:2px solid var(--violet); box-shadow:0 12px 30px rgba(90,79,207,.12)}
+  .badge{display:inline-block; background:var(--tint); color:var(--violet-d); font-size:.78rem; font-weight:600; padding:4px 12px; border-radius:20px; margin-bottom:12px; width:max-content}
+  .price{font-size:2.1rem; font-weight:700; color:var(--navy); margin:6px 0 2px}
+  .price s{font-size:1rem; font-weight:500; color:var(--muted); margin-left:8px}
+  .card ul{list-style:none; padding:0; margin:14px 0 22px}
+  .card li{padding:7px 0 7px 26px; position:relative; font-size:.95rem}
+  .card li::before{content:"✓"; position:absolute; left:0; color:var(--violet); font-weight:700}
+  .card .btn{margin-top:auto; text-align:center}
+  .note{font-size:.9rem; color:var(--muted)}
+  /* steps */
+  .steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); counter-reset:step}
+  .step{background:var(--off); border-radius:var(--r); padding:24px}
+  .step::before{counter-increment:step; content:counter(step); display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:var(--violet); color:#fff; font-weight:600; margin-bottom:12px}
+  /* about */
+  .seats{grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); margin-top:10px}
+  .seat{background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:20px}
+  .seat h3{font-size:1rem; color:var(--violet-d)}
+  /* form */
+  .formwrap{grid-template-columns:1fr 1fr; gap:40px; align-items:center}
+  form.lead-form{background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:26px}
+  label{display:block; font-size:.9rem; font-weight:500; color:var(--navy); margin:14px 0 5px}
+  input[type=text],input[type=email],.lead-form select{width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:9px; font:inherit; background:#fff; color:var(--ink)}
+  input:focus{outline:2px solid var(--violet-l); border-color:var(--violet)}
+  .consent{display:flex; gap:10px; align-items:flex-start; margin:16px 0; font-size:.86rem; color:var(--muted)}
+  .consent input{margin-top:4px}
+  form .btn{width:100%; margin-top:6px}
+  /* faq */
+  details{background:#fff; border:1px solid var(--line); border-radius:10px; margin-bottom:12px; padding:4px 18px}
+  summary{cursor:pointer; font-weight:500; color:var(--navy); padding:14px 0; list-style:none; display:flex; justify-content:space-between; align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+"; color:var(--violet); font-size:1.4rem; font-weight:600}
+  details[open] summary::after{content:"–"}
+  details p{padding-bottom:14px; margin:0; color:var(--muted)}
+  /* footer */
+  footer{background:var(--navy); color:#cdd8e0; padding:54px 0 28px; margin-top:20px}
+  footer img{height:42px; margin-bottom:16px}
+  footer a{color:#cdd8e0}
+  footer .cols{display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap}
+  footer .boundary{max-width:520px; font-size:.9rem}
+  footer .legal{display:flex; gap:18px; flex-wrap:wrap; font-size:.88rem; margin-top:26px; padding-top:18px; border-top:1px solid rgba(255,255,255,.15)}
+  .skip{position:absolute; left:-999px}
+  .skip:focus{left:12px; top:12px; background:#fff; padding:10px; z-index:100; border-radius:8px}
+  @media(max-width:760px){
+    .nav-links{display:none; position:absolute; top:62px; left:0; right:0; background:var(--off); flex-direction:column; padding:16px 22px; gap:16px; border-bottom:1px solid var(--line)}
+    .nav-links.open{display:flex}
+    .nav-toggle{display:block}
+    .formwrap{grid-template-columns:1fr}
+    .section{padding:54px 0}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a href="#top" aria-label="Coderise Coaching home" style="display:flex;align-items:center;gap:8px;text-decoration:none"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 17 L7 32 L20 47" fill="none" stroke="#0B334E" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 17 L57 32 L44 47" fill="none" stroke="#0B334E" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="27" r="7.2" fill="#5A4FCF"/><path d="M21 45 C21 37 26 33.5 32 33.5 C38 33.5 43 37 43 45 Z" fill="#5A4FCF"/></svg><span style="font-weight:600;font-size:1.15rem"><span style="color:#0B334E">coderise</span> <span style="color:#5A4FCF">coaching</span></span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#guide">Free guide</a>
+      <a href="#faq">FAQ</a>
+      <a href="#guide" class="btn btn-primary" style="padding:9px 18px;color:#fff">Get the free guide</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero wrap">
+  <h1>Land the role you are actually capable of.</h1>
+  <p class="sub">CV, LinkedIn and interview coaching from a Tech Recruiter and former Head of HR. Know exactly what hiring teams look for, because I have been the one deciding.</p>
+  <div class="ctas">
+    <a href="#guide" class="btn btn-primary">Get the free guide</a>
+    <a href="#packages" class="btn btn-ghost">See the packages</a>
+  </div>
+</section>
+<div class="tagline"><div class="wrap">Get found <span class="dot">•</span> Get interviews <span class="dot">•</span> Get hired</div></div>
+
+<!-- PROBLEM -->
+<section class="section">
+  <div class="wrap" style="max-width:760px">
+    <h2>You are doing everything right and hearing nothing back</h2>
+    <p class="lead">Here is the truth most people never get told. You are usually not being rejected because you are not good enough. You are being rejected because you are invisible, or because your application is filtered out before a human ever properly reads it, which we can help with.</p>
+    <p class="muted">A single advert today pulls hundreds of CVs, often thousands. Easy Apply and frictionless applications mean huge numbers of unsuitable people apply in two clicks, and the noise drowns the genuinely good candidates. To cope, companies lean on AI screening and recruiters giving each CV a flash glance. Your job is to survive that filter and rise out of the noise. That is exactly what Coderise Coaching does for you.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section alt" id="about">
+  <div class="wrap">
+    <h2>Coaching from inside the hiring machine</h2>
+    <p class="lead" style="max-width:760px">I am a Tech Recruiter, and before that I spent six years as a Head of HR. Most career advice is written by people who have never shortlisted anyone. This is the opposite: the inside view, turned into practical help.</p>
+    <p style="max-width:760px" class="muted">I have sat in all three of the seats that decide whether you get the job. I know what each of them is really looking for, because I have been each of them.</p>
+    <div class="grid seats">
+      <div class="seat"><h3>The external recruiter</h3><p class="note">Deciding whether to put you forward at all.</p></div>
+      <div class="seat"><h3>The internal talent team</h3><p class="note">Screening you in or out before you reach the manager.</p></div>
+      <div class="seat"><h3>The hiring manager</h3><p class="note">Weighing you up against the brief and the rest of the shortlist.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section" id="packages">
+  <div class="wrap">
+    <h2 class="center">Three packages, fully handled</h2>
+    <p class="center muted" style="max-width:620px; margin:0 auto 36px">From invisible to hired. Each builds on the one before. Prices below are designed to make this as accessible as possible, to help grads starting their career journey.</p>
+    <div class="grid cards">
+
+      <div class="card">
+        <h3>Get Found</h3>
+        <div class="price">£59 <s>£79</s></div>
+        <p class="note">For when recruiters cannot find you and applications go nowhere. I do all the work.</p>
+        <ul>
+          <li>Professional CV rewrite, built for recruiters and screening software</li>
+          <li>A CV report on what was holding you back</li>
+          <li>LinkedIn rewrite so you surface in recruiter searches</li>
+          <li>Insider guide on how recruiters shortlist</li>
+          <li>A recorded walkthrough of your changes</li>
+          <li>Everything delivered within 48 hours</li>
+        </ul>
+        <!-- Replace href with your Stripe Payment Link for Get Found -->
+        <a class="btn btn-ghost" href="https://buy.stripe.com/4gM14m7qK45e3Xdfpa57W01">Get Found - £59</a>
+      </div>
+
+      <div class="card feature">
+        <span class="badge">Most popular</span>
+        <h3>Get Interviews</h3>
+        <div class="price">£139 <s>£179</s></div>
+        <p class="note">Everything in Get Found, plus what turns applications into interviews.</p>
+        <ul>
+          <li>Everything in Get Found</li>
+          <li>Application strategy: where to apply and how to target</li>
+          <li>Recruiter-insight masterclass</li>
+          <li>A live mock interview with honest feedback</li>
+          <li>Interview prep toolkit and templates</li>
+        </ul>
+        <!-- Replace href with your Stripe Payment Link for Get Interviews -->
+        <a class="btn btn-primary" href="https://buy.stripe.com/3cI5kC12m1X6eBR7WI57W02">Get Interviews - £139</a>
+      </div>
+
+      <div class="card">
+        <h3>Get Hired</h3>
+        <div class="price">£229 <s>£299</s></div>
+        <p class="note">Everything in Get Interviews, plus the push to convert interviews into the right offer.</p>
+        <ul>
+          <li>Everything in Get Interviews</li>
+          <li>A second live mock, role or technically focused</li>
+          <li>Conduct and follow-up coaching</li>
+          <li>Live offer and salary negotiation session</li>
+          <li>30 days of email support, with a maximum 24 hour response time</li>
+        </ul>
+        <!-- Replace href with your Stripe Payment Link for Get Hired -->
+        <a class="btn btn-ghost" href="https://buy.stripe.com/bJebJ0bH07hqalB1yk57W03">Get Hired - £229</a>
+      </div>
+
+    </div>
+    <p class="center note" style="margin-top:26px">Already bought a lower package? Upgrade within 60 days and pay only the difference. You never lose what you already paid.</p>
+    <p class="center note"><strong>What this is not:</strong> not a job or placement guarantee, and not representation. Buying coaching does not put you forward for roles and has no influence on any recruitment process.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section alt">
+  <div class="wrap">
+    <h2 class="center">How it works</h2>
+    <div class="grid steps" style="margin-top:30px">
+      <div class="step"><h3>Choose and pay</h3><p class="note">Pick your package and pay online. No calls, no waiting for a slot.</p></div>
+      <div class="step"><h3>Tell me about you</h3><p class="note">A short form about you and your target roles, and send your CV.</p></div>
+      <div class="step"><h3>I do the work</h3><p class="note">Your rewritten CV, LinkedIn and reports come back within a few working days, with live sessions booked where your package includes them.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE GUIDE -->
+<section class="section" id="guide">
+  <div class="wrap grid formwrap">
+    <div>
+      <h2>Get the free guide</h2>
+      <p>Not ready to buy? Start here. My free guide maps the whole journey, from getting found to signing an offer, with insider tips from someone who hires for a living.</p>
+      <p class="muted">You will learn why good people get filtered out, how recruiters actually search and shortlist, and the few things that make the biggest difference at each stage.</p>
+    </div>
+    <!-- Posts directly to MailerLite. The hidden iframe catches the response so the visitor stays on the page; the script below swaps in the thank-you message. -->
+    <form class="lead-form" id="guideForm" action="https://assets.mailerlite.com/jsonp/2397956/forms/189105394933564528/subscribe" method="post" target="ml_iframe">
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="fields[name]" required autocomplete="given-name" />
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="fields[last_name]" required autocomplete="family-name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="fields[email]" required autocomplete="email" />
+      <label for="role">Ideal target role</label>
+      <input type="text" id="role" name="fields[country]" placeholder="e.g. graduate software engineer" />
+      <label for="yoe">Years of experience</label>
+      <select id="yoe" name="fields[company]">
+        <option value="">Select...</option>
+        <option>0-1</option>
+        <option>2-4</option>
+        <option>5-10</option>
+        <option>10-15</option>
+        <option>15+</option>
+      </select>
+      <div class="consent">
+        <input type="checkbox" id="consent" required value="yes" />
+        <label for="consent" style="font-weight:400; margin:0; color:inherit">Yes, send me the guide and occasional emails from Coderise Coaching about how to get found, get interviews and get hired. I can unsubscribe any time. See the <a href="privacy.html">Privacy policy</a>.</label>
+      </div>
+      <input type="hidden" name="ml-submit" value="1" />
+      <input type="hidden" name="anticsrf" value="true" />
+      <button type="submit" class="btn btn-primary">Send me the guide</button>
+    </form>
+    <div id="guideThanks" class="lead-form" style="display:none; text-align:center">
+      <h3 style="margin-top:0">Thank you. Check your inbox.</h3>
+      <p class="muted" style="margin:0">Your guide is on its way to your email. If it is not there in a couple of minutes, have a look in your spam folder.</p>
+    </div>
+    <iframe name="ml_iframe" title="hidden" style="display:none" aria-hidden="true"></iframe>
+  </div>
+</section>
+<script>
+  (function(){
+    var f = document.getElementById('guideForm');
+    if(!f) return;
+    f.addEventListener('submit', function(){
+      setTimeout(function(){
+        f.style.display = 'none';
+        document.getElementById('guideThanks').style.display = 'block';
+      }, 400);
+    });
+  })();
+</script>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap" style="max-width:780px">
+    <h2 class="center" style="margin-bottom:30px">Questions</h2>
+    <details><summary>Who is this for?</summary><p>Graduates and early-career engineers and technologists who are struggling to get found, get interviews, or get over the line on an offer.</p></details>
+    <details><summary>Is this a job guarantee?</summary><p>No. No honest coach can guarantee a job. What I guarantee is work that materially improves how you come across to recruiters and hiring teams, based on how hiring actually works.</p></details>
+    <details><summary>How does delivery work?</summary><p>You buy online, complete a short intake form and send your CV, and I do the work. Done-for-you items come back within a few working days. Packages with live sessions include booking once you have purchased.</p></details>
+    <details><summary>Do we talk on a call first?</summary><p>No. This is a self-serve service by design, which keeps it affordable and fast. Everything you need to choose is here, and questions can be answered by email.</p></details>
+    <details><summary>Can I upgrade later?</summary><p>Yes. Upgrade within 60 days and pay only the difference between your package and the higher one.</p></details>
+    <details><summary>Is this connected to your recruitment business?</summary><p>They are run separately. Buying coaching does not put you forward for any role and has no influence on any recruitment process. Coaching simply improves your chances in the open market.</p></details>
+    <details><summary>What happens to my data?</summary><p>Your data is used only to deliver your coaching and, if you opted in, to email you. It is never sold. See the <a href="privacy.html">privacy policy</a>.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="#top" style="display:inline-flex;align-items:center;gap:9px;text-decoration:none;margin-bottom:16px"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 17 L7 32 L20 47" fill="none" stroke="#FAF8F8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 17 L57 32 L44 47" fill="none" stroke="#FAF8F8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="27" r="7.2" fill="#9B8FF0"/><path d="M21 45 C21 37 26 33.5 32 33.5 C38 33.5 43 37 43 45 Z" fill="#9B8FF0"/></svg><span style="font-weight:600;font-size:1.2rem"><span style="color:#fff">coderise</span> <span style="color:#9B8FF0">coaching</span></span></a>
+        <p class="boundary">Coaching improves your chances in the open market. It is not a backdoor to being put forward for roles, and it never will be. Coaching and recruitment are kept completely separate.</p>
+      </div>
+      <div>
+        <p style="color:#fff; font-weight:500; margin-bottom:8px">Get in touch</p>
+        <p><a href="mailto:hello@coderisecoaching.com">hello@coderisecoaching.com</a></p>
+        <p class="note" style="color:#9fb0bd">Email only, usually answered within one working day.</p>
+      </div>
+    </div>
+    <div class="legal">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms</a>
+      <span>© <span id="yr"></span> Coderise Coaching is a trading name of Coderise Talent Ltd, registered in England and Wales. Company no. 16561174. Registered office: 11 Invicta Court, Billericay, CM12 0LR.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  var t=document.getElementById('navToggle'), l=document.getElementById('navLinks');
+  t.addEventListener('click',function(){var o=l.classList.toggle('open'); t.setAttribute('aria-expanded',o);});
+  l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open'); t.setAttribute('aria-expanded',false);});});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
